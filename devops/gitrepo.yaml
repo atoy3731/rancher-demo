@@ -4,7 +4,8 @@ metadata:
   name: jenkins
   namespace: fleet-default
 spec:
-  repo: ssh://git@git-ssh.atoy.lol/home/harbor.git
+  repo: git@github.com:atoy3731/rancher-demo.git
+  branch: main
   targets:
   - name: services
     clusterSelector:

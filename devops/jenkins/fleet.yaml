@@ -14,7 +14,3 @@ helm:
           hosts:
             - jenkins.kube.lol
 
-dependsOn:
-- name: common-namespaces-helm
-- name: cert-manager-crds
-
