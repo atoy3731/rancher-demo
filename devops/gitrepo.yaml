@@ -1,0 +1,14 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: jenkins
+  namespace: fleet-default
+spec:
+  repo: ssh://git@git-ssh.atoy.lol/home/harbor.git
+  targets:
+  - name: services
+    clusterSelector:
+      matchLabels:
+        env: services
+  paths:
+  - "./devops/jenkins"

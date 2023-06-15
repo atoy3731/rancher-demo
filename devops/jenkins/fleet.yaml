@@ -1,0 +1,20 @@
+defaultNamespace: jenkins
+helm:
+  repo: https://charts.jenkins.io
+  chart: jenkins
+  version: 4.3.28
+  releaseName: cert-manager
+  values:
+    controller:
+      ingress:
+        enabled: true
+        hostName: jenkins.kube.lol
+        tls:
+        - secretName: kube-lol
+          hosts:
+            - jenkins.kube.lol
+
+dependsOn:
+- name: common-namespaces-helm
+- name: cert-manager-crds
+
