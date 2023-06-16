@@ -2,4 +2,6 @@ defaultNamespace: kube-system
 helm:
   chart: git::https://github.com/kubernetes/cloud-provider-aws.git//charts//aws-cloud-controller-manager
   releaseName: aws-cloud-provider
-
+  values:
+    nodeSelector:
+      node-role.kubernetes.io/control-plane: true
