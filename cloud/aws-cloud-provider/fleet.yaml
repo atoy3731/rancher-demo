@@ -11,3 +11,4 @@ helm:
     - --allocate-node-cidrs=false
     - --cluster-cidr=10.42.0.0/16
     - --cluster-name=c-m-4dpn4cng
+    - --configure-cloud-routes=false
