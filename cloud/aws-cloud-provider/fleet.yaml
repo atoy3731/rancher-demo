@@ -4,4 +4,4 @@ helm:
   releaseName: aws-cloud-provider
   values:
     nodeSelector:
-      node-role.kubernetes.io/control-plane: true
+      node-role.kubernetes.io/control-plane: "true"
