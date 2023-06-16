@@ -3,7 +3,7 @@ helm:
   repo: https://charts.jenkins.io
   chart: jenkins
   version: 4.3.28
-  releaseName: cert-manager
+  releaseName: jenkins
   values:
     controller:
       ingress:
