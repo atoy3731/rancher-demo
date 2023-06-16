@@ -5,3 +5,8 @@ helm:
   values:
     nodeSelector:
       node-role.kubernetes.io/control-plane: "true"
+    args:
+    - --v=2
+    - --cloud-provider=aws
+    - --allocate-node-cidrs=false
+    - --cluster-cidr= 10.42.0.0/16
