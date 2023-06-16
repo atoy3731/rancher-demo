@@ -1,10 +1,10 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: jenkins
+  name: services
   namespace: fleet-default
 spec:
-  repo: git@github.com:atoy3731/rancher-demo.git
+  repo: https://github.com/atoy3731/rancher-demo.git
   branch: main
   targets:
   - name: services
@@ -13,3 +13,4 @@ spec:
         env: services
   paths:
   - "./devops/jenkins"
+  - "./cloud/aws-cloud-provider"
