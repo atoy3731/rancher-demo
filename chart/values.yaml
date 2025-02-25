@@ -14,3 +14,4 @@ config:
   backgroundColor: white
   displayIcon: flag   # flag, shield
   loadbalancerEnabled: false
+  navlinkEnabled: false
