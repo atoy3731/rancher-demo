@@ -37,3 +37,14 @@ jobs:
           access-token: ${{ secrets.GITHUB_TOKEN }}
           force: true
           chart-folder: chart
+
+      - name: Chart Push
+        uses: appany/helm-oci-chart-releaser@v0.3.0
+        with:
+          name: rancher-demo
+          repository: charts
+          tag: 0.1.0
+          path: charts
+          registry: ghcr.io
+          registry_username: ${{ github.actor }}
+          registry_password: ${{ secrets.GITHUB_TOKEN }}
