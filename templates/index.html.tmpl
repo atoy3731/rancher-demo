@@ -21,17 +21,14 @@
             function getPetsAsset(pets) {
                 var asset;
                 switch (pets) {
-					case "cows":
-                  		asset = "static/img/rancher-logo-cow-blue.png"
+					case "flag":
+                  		asset = "static/img/rancher-govt-flag.png"
                   		break;
-                	case "chameleons":
-                  		asset = "static/img/suse-logo-chameleon-green.png"
-                  		break;
-                	case "cowmeleons":
-                  		asset = "static/img/suse-rancher-cowmeleon.png"
+                	case "shield":
+                  		asset = "static/img/rancher-govt-shield.png"
                   		break;
                 	default:
-						asset = "static/img/rancher-logo-cow-blue.png"
+                  		asset = "static/img/rancher-govt-flag.png"
 				}
 				return asset;
 			}
@@ -161,11 +158,7 @@
             <div class="six wide column meta">
                 <div class="ui container">
                     Inspired by <a href="https://github.com/ehazlett/docker-demo" target="_blank">ehazlett/docker-demo</a>
-                    <img class="logo center" src="static/img/rancher-logo-stacked-white.png"/>
-
-
-
-
+                    <img class="logo center" src="static/img/rancher-govt-logo.png"/>
                     <div class="row centered">
                         <div class="ui huge statistic">
                             <div id="container-count" class="value"></div>

@@ -32,9 +32,8 @@ for showing scale-in of an upgraded application.
   - pink
   - black
 - `PETS`: The kind of pet shown in each container. Valid options are:
-  - cows
-  - chameleons
-  - cowmeleons
+  - flag
+  - shield
 
 ## Build
 

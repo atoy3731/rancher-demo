@@ -24,10 +24,6 @@ div.value {
 h1.ui.header {
     font-size: 38pt;
 }
-.logo {
-    width: 80%;
-    height: 80%;
-}
 .centered {
     text-align: center;
     margin-left: auto;
@@ -39,6 +35,9 @@ img.center {
 }
 .request-counter {
     margin: 40px 0 50px;
+}
+.logo {
+    margin-bottom: 50px!important;
 }
 .serving {
     opacity: 0.7;
