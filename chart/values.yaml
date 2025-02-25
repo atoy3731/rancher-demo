@@ -11,7 +11,9 @@ image:
   tag: "latest"
 
 config:
+  hostname: app.rancher-demo.com
   backgroundColor: white
   displayIcon: flag   # flag, shield
+  ingressEnabled: true
   loadbalancerEnabled: false
   navlinkEnabled: false
