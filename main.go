@@ -224,7 +224,7 @@ func ping(w http.ResponseWriter, r *http.Request) {
 
 	contColor := os.Getenv("CONTAINER_COLOR")
 	if contColor == "" {
-		contColor = "#d7d8d8"
+		contColor = "white"
 	}
 
 	pets := os.Getenv("PETS")
