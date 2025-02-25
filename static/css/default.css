@@ -37,7 +37,8 @@ img.center {
     margin: 40px 0 50px;
 }
 .logo {
-    margin: 50px!important;
+    margin-top: 50px!important;
+    margin-bottom: 50px!important;
 }
 .serving {
     opacity: 0.7;
