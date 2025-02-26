@@ -33,7 +33,7 @@ jobs:
         with:
           name: rancher-demo
           repository: atoy3731/charts
-          tag: 0.1.0
+          tag: 0.2.0
           path: chart
           registry: ghcr.io
           registry_username: ${{ github.actor }}
