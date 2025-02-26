@@ -1,3 +1,4 @@
+{{- if .Values.config.nodeportEnabled }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -11,4 +12,5 @@ spec:
     port: 8080
     protocol: TCP
     targetPort: 8080
-    nodePort: 30080
+    nodePort: {{ .Values.config.nodeport }}
+{{- end -}}

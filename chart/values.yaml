@@ -16,4 +16,6 @@ config:
   displayIcon: flag   # flag, shield
   ingressEnabled: true
   loadbalancerEnabled: false
+  nodeportEnabled: false
   navlinkEnabled: false
+  nodeport: 30080
