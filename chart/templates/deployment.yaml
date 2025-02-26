@@ -22,7 +22,7 @@ spec:
       - env:
         - name: CONTAINER_COLOR
           value: {{ .Values.config.backgroundColor }}
-        - name: PET
+        - name: PETS
           value: {{ .Values.config.displayIcon }}
         name: demo
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
