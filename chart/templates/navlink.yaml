@@ -13,8 +13,8 @@ spec:
   sideLabel: Demo
   target: _blank
   toService:
-    name: cowsay
-    namespace: default
+    name: rancher-demo
+    namespace: {{ .Release.Namespace }}
     path: /
     port: '8080'
     scheme: http
