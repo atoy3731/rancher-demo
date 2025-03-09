@@ -59,11 +59,16 @@
 
             function reload() {
                 var ts = new Date().getTime();
+                var fullUrl = location.protocol + '//' + location.host + location.pathname;
+                if (!fullUrl.endsWith("/")) {
+                  fullUrl = fullUrl + "/";
+                }
+
                 var expireInterval = Number({{ .ExpireInterval }});
                 var removeInterval = Number({{ .RemoveInterval }});
 
                 $.ajax({
-                     url: "/demo?" + ts,
+                     url: fullUrl + "/demo?" + ts,
                      dataType: "json",
                      cache: false,
                      beforeSend: function (request) {},
